@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Meal Picker</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div class=mealPicker>
+  <h1 id="header">Meal Picker</h1>
+  <p>Not sure what to eat for dinner? Put in your cuisine preference and let the meal picker choose for you!</p>
+  <div class="dropdown">
+  <label for="cuisine">Choose a cuisine:</label>
+  <select id="cuisine" name="cuisine" onchange="selectCuisine();">
+  <option value="caribbean">Caribbean</option>
+  <option value="westAfrican">West African</option>
+  <option value="lebanese">Lebanese</option>
+  <option value="japanese">Japanese</option>
+  <option value="indian">Indian</option>
+  <option value="thai">Thai</option>
+  <option value="italy">Italy</option>
+  <option value="mexican">Mexican</option>
+</select>
+   <input type="button" id="submit" value="Submit"> 
+    <p id="output"></p>
+  </div>
+</div>
+  <script src="app.js"></script>
+</body>
+
+</html>
